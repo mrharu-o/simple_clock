@@ -6,7 +6,7 @@ function Date_get() {
     var today = years + "年" + months + "月" + days + "日";
     document.getElementById("Date_place").innerHTML = today;
     }
-    setInterval('Time()',1000);
+    setInterval('Time()',1000);//hoge
 
 function Time_get() {
     var time = new Date();
