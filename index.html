@@ -17,21 +17,28 @@
   <script src="./assets/js/bootstrap.min.js"></script>
   <script src="./assets/js/aos.js"></script>
   <script src="./assets/js/simple_clock.js"></script>
-  
+
 
   <title>時計</title>
 </head>
 
 <body>
-  <div class="Date">
-    <p><span id="Date_place"></span></p>
+  <div class="container">
+    <div class="Date">
+      <p><span id="Date_place"></span></p>
+    </div>
+    <div class="Time">
+      <p><span id="Time_place"></span></p>
+    </div>
+
+
+    <button type="button" class="btn btn-outline-primary" src="/">HOMEへ</button>
+
   </div>
-  <div class="Time">
-<p><span id="Time_place"></span></p>
-  </div>
-<script>
-  AOS.init();
-</script>
+
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
