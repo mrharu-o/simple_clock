@@ -1,9 +1,9 @@
 function Time() {
-    var realTime = new Date();
-    var hour = realTime.getHours();
-    var minutes  = realTime.getMinutes();
-    var seconds  = realTime.getSeconds();
-    var time = hour + ":" + minutes + ":" + seconds;
-    document.getElementById("Time-view").innerHTML = time;
- }
- setInterval('Time()',1000);
+    var time = new Date();
+    var hours = time.getHours();
+    var minutes = time.getMinutes();
+    var seconds = time.getSeconds();
+    var clock = hours + ":" + minutes + ":" + seconds;
+    document.getElementById("Time-view").innerHTML = clock;
+    }
+    setInterval('Time()',1000);
