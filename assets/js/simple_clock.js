@@ -1,7 +1,7 @@
 function Date_get() {
     var dates = new Date();
     var years = dates.getFullYear();
-    var months = dates.getMonth();
+    var months = dates.getMonth()+1;
     var days = dates.getDate();
     var today = years + "年" + months + "月" + days + "日";
     document.getElementById("Date_place").innerHTML = today;
