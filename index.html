@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>時計</title>
+</head>
+
+<body>
+<p><span id="Time-view"></span></p>
+
+<script>
+    function Time() {
+    var time = new Date();
+    var hours = time.getHours();
+    var minutes = time.getMinutes();
+    var seconds = time.getSeconds();
+    var clock = hours + ":" + minutes + ":" + seconds;
+    document.getElementById("Time-view").innerHTML = clock;
+    }
+    setInterval('Time()',1000);
+</script>
+</body>
+
+</html>
